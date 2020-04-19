@@ -12,6 +12,9 @@ gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
+gem 'config'
+gem 'dotenv-rails', require: 'dotenv/rails-now'
+gem 'devise'
 gem 'webpacker', '4.2.2'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
