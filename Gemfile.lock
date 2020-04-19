@@ -83,7 +83,7 @@ GEM
       mini_portile2 (~> 2.3.0)
     puma (3.11.4)
     rack (2.0.5)
-    rack-proxy (0.6.4)
+    rack-proxy (0.6.5)
       rack
     rack-test (1.0.0)
       rack (>= 1.0, < 3)
@@ -149,7 +149,7 @@ GEM
       activemodel (>= 5.0)
       bindex (>= 0.4.0)
       railties (>= 5.0)
-    webpacker (3.5.3)
+    webpacker (4.2.2)
       activesupport (>= 4.2)
       rack-proxy (>= 0.6.1)
       railties (>= 4.2)
@@ -173,7 +173,7 @@ DEPENDENCIES
   spring-watcher-listen (~> 2.0.0)
   tzinfo-data
   web-console (>= 3.3.0)
-  webpacker
+  webpacker (= 4.2.2)
 
 RUBY VERSION
    ruby 2.6.6p146
