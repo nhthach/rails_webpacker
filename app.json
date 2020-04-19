@@ -1,0 +1,80 @@
+{
+  "name": "x_social",
+  "env": {
+    "CONTACT_EMAIL": {
+      "required": true
+    },
+    "FEEDBACK_EMAIL": {
+      "required": true
+    },
+    "ENCRYPTION_KEY": {
+      "required": true
+    },
+    "LANG": "en_US.UTF-8",
+    "HEROKU_APP_NAME": {
+      "description": "Fill in exactly same name with App name above",
+      "required": true
+    },
+    "RACK_ENV": {
+      "description": "To enable IP restriction, make sure to set `heroku`",
+      "required": true,
+      "value": "production"
+    },
+    "RAILS_ENV": {
+      "description": "To enable IP restriction, make sure to set `heroku`",
+      "required": true,
+      "value": "production"
+    },
+    "RAILS_LOG_TO_STDOUT": {
+      "required": true,
+      "value": "true"
+    },
+    "RAILS_SERVE_STATIC_FILES": {
+      "required": true,
+      "value": "true"
+    },
+    "NODE_ENV": {
+      "required": true,
+      "value": "production"
+    },
+    "SECRET_KEY_BASE": {
+      "description": "Generate secret key base by `rails secret`",
+      "required": true
+    },
+    "SMTP_ADDRESS": {
+      "required": true
+    },
+    "SMTP_DOMAIN": {
+      "required": true
+    },
+    "SMTP_PASSWORD": {
+      "required": true
+    },
+    "SMTP_USER_NAME": {
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "addons": [
+    {
+      "plan": "jawsdb:kitefin",
+      "options": {
+        "version": "5.7"
+      }
+    },
+    "heroku-redis"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "heroku/ruby"
+    }
+  ],
+  "stack": "heroku-18"
+}
